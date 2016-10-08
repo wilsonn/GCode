@@ -1,0 +1,86 @@
+/**********************************
+cabecera del panel principal
+***********************************/
+.cabeza{
+	height: 50px;
+	background-color: #16210b;
+}
+.logo{
+	margin-left: 0px;
+	margin-top: 5px;
+}
+.logo a img{
+	width: 40%;
+	margin: 5px 10px;
+}
+.usuario{
+	padding-top: 10px;
+	padding-left: 65%;
+}
+.usuario a{
+	cursor:pointer;
+	color: white;
+}
+.centro{
+	vertical-align: middle;
+}
+/**********************************
+el cuerpo del panel principal
+primer: division de color azul de la parte de arriba y abajo.
+***********************************/
+.primer{
+	background:#00527D;
+	background-repeat:no-repeat;
+	-webkit-background-size:100%;
+	-moz-background-size:100%;
+	background-size:100%;
+	background-position:center bottom;
+	color:#fff;
+	padding:15px 0 30px;
+}
+#bienve{
+	font-size: 2em;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+/***************************************
+formatos de letras para la parte del cuerpo del panel
+***************************************/
+.titulo-datos{
+	font-family: sans-serif;
+	font-weight: bold;
+	margin: 0 0 25px;
+	overflow: hidden;
+	padding: 5px;
+	background-color: #80C2D3;
+}
+/***************************************
+trabajo con los resultados de la base de datos
+****************************************/
+.panel-info ul{
+	list-style: none;
+}
+.panel-curso ul{
+	list-style: none;
+}
+.panel-evento ul{
+	list-style: none;
+}
+.panel-info hr, .panel-curso hr, .panel-evento hr{
+	border:0;
+}
+/*******************************************
+estilos de cajas del lados izquierdo y derecho
+*******************************************/
+#ip{
+	background-color: #00527D;
+	border-radius: 10px;
+	color:white;
+}
+/***************************************
+estilo del modelo de las cajas
+****************************************/
+.panel-info, .panel-curso, .panel-evento{
+	background-color: #f1f1f1;
+	border-radius: 15px;
+}

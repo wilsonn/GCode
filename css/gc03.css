@@ -1,0 +1,53 @@
+/* PANEL */
+.panel{
+    border: 1px solid #333;
+    background-color: #80C2D3;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.panel-heading{
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+.izquierda, .derecha{
+    display: inline-block;
+    vertical-align: top;
+    width: 65%;
+    text-align: center;
+}
+.izquierda{
+    width: 30%;
+    border-right: 2px solid #00527D;
+}
+.panel-foto {   
+    margin:  0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 145px;
+    width: 155px;
+}
+.panel-info {
+    margin:  0 auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    height: 200px;
+    width: 300px;
+    padding: 15px;
+}
+.panel-curso {
+    margin:  0 auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    height: 200px;
+    width: 300px;
+    padding: 15px;
+}
+.panel-evento {    
+    margin:  0 auto;
+    margin-top: 50px;
+    /*height: 500px;*/
+    width: 500px;
+    font-style: normal;
+    padding: 15px;
+}

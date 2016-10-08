@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <link rel="stylesheet"  href="css/gc01.css"/>
+        <link rel="stylesheet"  href="css/gc02.css"/>
+        <link rel="stylesheet"  href="css/gc04.css"/>
+        
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+        
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/app.js"></script>
+                
+        <title>Bienvenido a GCode.ln en Español</title>
+    </head>
+    <body>
+        <section id="container">
+            <header class="Header">
+                <div class="header-logo">
+                    <a href="index.html">
+                        <img src="img/gcode.png" alt="GCode.ln">
+                    </a>
+                </div>
+                <div class="Header-container u-wrapper u-clearfix header-nav">
+                    <div class="Header-menuContainer">
+                        <label class="Header-mobileMenu icon-menu" for="MainMenu-callback"></label>
+                        <!--<label class="Header-login btn-Red" for="Login-callback">Inscribete</label>-->
+                        <input type="checkbox" id="MainMenu-callback" class="MainMenu-callback">
+                        <nav class="MainMenu"><ul class="MainMenu-container">
+                        <li class="MainMenu-option "><a href="QuienesSomos.html" class="MainMenu-link">Qui&eacute;nes somos?</a></li>
+                        <li class="MainMenu-option "><a href="Asesoramiento.html" class="MainMenu-link">Asesoramiento</a></li>
+                        <li class="MainMenu-option "><a href="login.html" class="MainMenu-link">Usuario</a></li>
+                        <li class="MainMenu-option "><a href="Contactos.html" class="MainMenu-link">Cont&aacute;ctenos</a></li></ul>
+                        </nav>    
+                    </div>
+                </div>
+            </header>
+
+            <section class="MainSection">
+                <div class="u-wrapper">
+                <h1 class="MainSection-title title-Main">Aprende a innovar con el mundo de las tecnolog&iacute;as</h1>
+
+            
+                    <!--<div class="MainSection-wrapTrailer">
+                    <a class="Trailer icon-play" href="" data-video="QqWNpuxCal4" target="_blank" id="trailer">
+                            <img src="" alt="imagen de youtube" width="100" height="57">
+                    </a>
+                    </div>-->
+                    <!--<div class="MainSection-hIWLinkContainer"><a class="MainSection-hIWLink" target="_blank" href="https://gcodeln.wordpress.com/">Visitar el Blog de GCode.ln</a>
+                    </div>-->
+                    
+                        <!--<div class="MainSection-hIWLinkContainer" style="float:left; margin-top:-40px;"><a class="MainSection-hIWLink" target="_blank" href="http://startupgcodeln.blogspot.com/">Visitar Blogspot de GCode.ln</a></div>-->
+                    <div class="ul-tree">
+                    <a href="Contactos.html" class="MainSection-register btn-Green btn--big">Aprender ahora</a>
+                    <div class="MainSection-bottomActions">
+                        <ul class="tree">
+                            <li>
+                                <a class="bg-a" target="_blank" href="https://gcodeln.wordpress.com/">Visitar el Blog de GCode.ln</a>
+                            </li>
+                            <li>
+                                <a  target="_blank" href="http://startupgcodeln.blogspot.com/" class="bg-a">Visitar Blogspot de GCode.ln</a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <a class="Trailer icon-play" href="https://www.youtube.com/watch?v=NhzEY4mSRZs" data-video="QqWNpuxCal4" target="_blank" id="trailer">
+                                <img src="./img/video.jpg" alt="imagen de youtube" width="100" height="57">
+                        </a>
+                    </div>
+                    </div>
+            </section>
+            
+            <section class="CourseList" id="course_list"><div class="u-wrapper"><h2 class="CourseList-title"><span class="CourseList-titleBar">Asesoría en</span></h2>
+                    <input type="radio" name="tab" class="CourseList-tabInput" data-category="marketing" id="tab-marketing">
+                    <input type="radio" name="tab" class="CourseList-tabInput" data-category="development" id="tab-development" checked=""><input type="radio" name="tab" class="CourseList-tabInput" data-category="designandux" id="tab-designandux">
+
+                    <div id="lista_categoria" class="CourseList-tabs">
+
+                    </div>
+
+                    <div id="dialog-message" title="Información">
+
+                    </div>
+
+                    <ul class="CourseList-list">
+                        <div class="CourseList-listContainer">
+
+                            <li class="CourseList-course u-clearfix" data-category="marketing">
+                                <a onclick="mostrarInformacion('mysql');" class="CourseList-courseGoblalLink"></a>
+                                <input type="hidden" id="idmysql" name="idmysql" value="1"/>
+                                <div class="CourseList-courseData">
+                                    <img src="img/mysql.png" alt="Curso de Estrategia digital y marketing" height="80" width="80" class="CourseList-badge">
+                                    <div class="CourseList-courseLevel" data-level="intermedio">
+                                        B&aacute;sico  Intermedio  Avanzado
+                                    </div>                                
+                                </div>
+                                <div class="CourseList-courseInfo">
+                                    <h3 class="CourseList-courseTitle">Mysql</h3>
+                                </div>
+                                <!--<a onclick="mostrarInformacion('mysql');" class="CourseList-courseLink">Detalles</a>
+                                 </div>-->
+                            </li>
+
+                            <li class="CourseList-course u-clearfix" data-category="development">
+                                <a onclick="mostrarInformacion('dweb');" class="CourseList-courseGoblalLink"></a>
+                                <input type="hidden" id="iddweb" name="iddweb" value="4"/>
+                                <div class="CourseList-courseData">
+                                    <img src="img/diseno.png" alt="Curso de Diseño web online" height="80" width="80" class="CourseList-badge">
+                                    <div class="CourseList-courseLevel" data-level="básico">
+                                        <br>B&aacute;sico Intermedio
+                                    </div>
+                                </div>
+                                <div class="CourseList-courseInfo">
+                                    <h3 class="CourseList-courseTitle">Diseño web</h3>
+                                    <!--<a onclick="mostrarInformacion('dweb');" class="CourseList-courseLink">Detalles, Click Aqui</a>-->
+                                </div>
+                            </li>
+
+                            <li class="CourseList-course u-clearfix" data-category="designandux">
+                                <a onclick="mostrarInformacion('pentaho');" class="CourseList-courseGoblalLink"></a>
+                                <input type="hidden" id="idpentaho" name="idpentaho" value="12"/>
+                                <div class="CourseList-courseData">
+                                    <img src="img/pentaho.png" alt="Curso de diseño gráfico de interfaces y UX" height="80" width="80" class="CourseList-badge">
+                                    <div class="CourseList-courseLevel" data-level="intermedio">
+                                        <br>B&aacute;sico Intermedio
+                                    </div>
+                                </div>
+                                <div class="CourseList-courseInfo">
+                                    <h3 class="CourseList-courseTitle">Pentaho</h3>
+                                    <!--a href="#" class="CourseList-courseLink">Detalles</a-->
+                                </div>
+                            </li>
+
+                            <li class="CourseList-course u-clearfix" data-category="designandux">
+                                <a onclick="mostrarInformacion('sqlsvri');" class="CourseList-courseGoblalLink"></a>
+                                <input type="hidden" id="idsqlsvri" name="idsqlsvri" value="13"/>
+                                <div class="CourseList-courseData">
+                                    <img src="img/sql.png" alt="Curso de diseño gráfico de interfaces y UX" height="80" width="80" class="CourseList-badge">
+                                    <div class="CourseList-courseLevel" data-level="intermedio">
+                                        <br>B&aacute;sico Intermedio
+                                    </div>
+                                </div>
+                                <div class="CourseList-courseInfo">
+                                    <h3 class="CourseList-courseTitle">SQL Server</h3>
+                                    <!--<a href="/diseno-interfaces-ux" class="CourseList-courseLink">Detalles</a>-->
+                                </div>
+                            </li>
+
+                            <li class="CourseList-course u-clearfix" data-category="marketing">
+                                <a  onclick="mostrarInformacion('oracle');" class="CourseList-courseGoblalLink"></a>
+                                <input type="hidden" id="idoracle" name="idoracle" value="2"/>
+                                <div class="CourseList-courseData">
+                                    <img src="img/oracle.png" alt="Curso de diseño gráfico de interfaces y UX" height="80" width="80" class="CourseList-badge">
+                                    <div class="CourseList-courseLevel" data-level="intermedio">
+                                        <br>B&aacute;sico Intermedio
+                                    </div>
+                                </div>
+                                <div class="CourseList-courseInfo">
+                                    <h3 class="CourseList-courseTitle">Oracle</h3>
+                                    <!--<a href="#" onclick="mostrarInformacion('oracle');" class="CourseList-courseLink">Detalles</a>-->
+                                </div>
+                            </li>
+
+
+                            <li class="CourseList-course u-clearfix" data-category="development">
+                                <a  onclick="mostrarInformacion('pback');" class="CourseList-courseGoblalLink"></a>
+                                <input type="hidden" id="idpback" name="idpback" value="5"/>
+                                <div class="CourseList-courseData">
+                                    <img src="img/prog.png" alt="Programación" height="80" width="80" class="CourseList-badge">
+                                    <div class="CourseList-courseLevel" data-level="básico">
+                                        B&aacute;sico  Intermedio  Avanzado
+                                    </div>                                        
+                                </div>
+                                <div class="CourseList-courseInfo">
+                                    <h3 class="CourseList-courseTitle">Programación Backend</h3>
+                                    <!--<a href="#" onclick="mostrarInformacion('pback');" class="CourseList-courseLink">Detalles</a>-->
+                                </div>
+                            </li>
+
+                            <li class="CourseList-course u-clearfix" data-category="marketing">
+                                <a onclick="mostrarInformacion('sqlsrv');"  class="CourseList-courseGoblalLink"></a>
+                                <input type="hidden" id="idsqlsrv" name="idsqlsrv" value="3"/>
+                                <div class="CourseList-courseData">
+                                    <img src="img/sql.png" alt="Curso profesional de Google AdWords" height="80" width="80" class="CourseList-badge">
+                                    <div class="CourseList-courseLevel" data-level="intermedio">
+                                        <br>B&aacute;sico Intermedio
+                                    </div>
+                                </div>
+                                <div class="CourseList-courseInfo"><h3 class="CourseList-courseTitle">SQL Server</h3>
+                                    <!-- <a href="#" onclick="mostrarInformacion('sqlsrv');" class="CourseList-courseLink">Detalles</a>-->
+                                </div>
+                            </li>
+
+                            <li class="CourseList-course u-clearfix" data-category="development">
+                                <a  onclick="mostrarInformacion('reposi');" class="CourseList-courseGoblalLink"></a>
+                                <input type="hidden" id="idreposi" name="idreposi" value="6"/>
+                                <div class="CourseList-courseData">
+                                    <img src="img/git.png" alt="Curso profesional de Git y GitHub" height="80" width="80" class="CourseList-badge">
+                                    <div class="CourseList-courseLevel" data-level="básico">
+                                        <br><br>básico
+                                    </div>
+                                </div>
+                                <div class="CourseList-courseInfo"><h3 class="CourseList-courseTitle">Repositorios de C&oacute;digo</h3>
+                                    <!--<a href="#" onclick="mostrarInformacion('reposi');" class="CourseList-courseLink">Detalles</a>-->
+                                </div>
+                            </li>
+
+                            <li class="CourseList-course u-clearfix" data-category="development">
+                                <a onclick="mostrarInformacion('fronte');" class="CourseList-courseGoblalLink"></a>
+                                <input type="hidden" id="idfronte" name="idfronte" value="7"/>
+                                <div class="CourseList-courseData">
+                                    <img src="img/frontend.png" alt="Curso Profesional de Frontend" height="80" width="80" class="CourseList-badge">
+                                    <div class="CourseList-courseLevel" data-level="avanzado">
+                                        B&aacute;sico  Intermedio  Avanzado
+                                    </div>                                        
+                                </div>
+                                <div class="CourseList-courseInfo"><h3 class="CourseList-courseTitle">Frontend</h3>
+                                    <!--<a href="#" onclick="mostrarInformacion('fronte');" class="CourseList-courseLink">Detalles</a>-->
+                                </div>
+                            </li>
+
+
+                            <li class="CourseList-course u-clearfix" data-category="development">
+                                <a  onclick="mostrarInformacion('admsrv');" class="CourseList-courseGoblalLink"></a>
+                                <input type="hidden" id="idadmsrv" name="idadmsrv" value="8"/>
+                                <div class="CourseList-courseData">
+                                    <img src="img/server.png" alt="Curso de Administración de Servidores y DevOps" height="80" width="80" class="CourseList-badge">
+                                    <div class="CourseList-courseLevel" data-level="intermedio">
+                                        <br>B&aacute;sico Intermedio
+                                    </div>
+                                </div>
+                                <div class="CourseList-courseInfo"><h3 class="CourseList-courseTitle">Administración de Servidores</h3>
+                                    <!--<a href="#" onclick="mostrarInformacion('admsrv');" class="CourseList-courseLink">Detalles</a>-->
+                                </div>
+                            </li>
+
+                            <li class="CourseList-course u-clearfix" data-category="development">
+                                <a onclick="mostrarInformacion('jscrip');" class="CourseList-courseGoblalLink"></a>
+                                <input type="hidden" id="idjscrip" name="idjscrip" value="9"/>
+                                <div class="CourseList-courseData">
+                                    <img src="img/javascript.png" alt="Curso Profesional de Node.js y Javascript" height="80" width="80" class="CourseList-badge">
+                                    <div class="CourseList-courseLevel" data-level="avanzado">
+                                        B&aacute;sico  Intermedio  Avanzado
+                                    </div>                                        
+                                </div>
+                                <div class="CourseList-courseInfo"><h3 class="CourseList-courseTitle">Javascript y librer&iacute;as</h3>
+                                    <!--<a href="#" onclick="mostrarInformacion('jscrip');" class="CourseList-courseLink">Detalles</a>-->
+                                </div>
+                            </li>
+
+                            <li class="CourseList-course u-clearfix" data-category="development">
+                                <a onclick="mostrarInformacion('phpfra');" class="CourseList-courseGoblalLink"></a>
+                                <input type="hidden" id="idphpfra" name="idphpfra" value="10"/>
+                                <div class="CourseList-courseData">
+                                    <img src="img/php.png" alt="Curso profesional de PHP con Laravel" height="80" width="80" class="CourseList-badge">
+                                    <div class="CourseList-courseLevel" data-level="avanzado">
+                                        B&aacute;sico  Intermedio  Avanzado
+                                    </div>                                        
+                                </div>
+                                <div class="CourseList-courseInfo"><h3 class="CourseList-courseTitle">PHP con Frameworks</h3>
+                                    <!--<a href="#" onclick="mostrarInformacion('phpfra');" class="CourseList-courseLink">Detalles</a>-->
+                                </div>
+                            </li>
+
+                            <li class="CourseList-course u-clearfix" data-category="development">
+                                <a onclick="mostrarInformacion('android');" class="CourseList-courseGoblalLink"></a>
+                                <input type="hidden" id="idandroid" name="idandroid" value="11"/>
+                                <div class="CourseList-courseData">
+                                    <img src="img/android2.jpg" alt="Curso de programación en Android" height="80" width="80" class="CourseList-badge">
+                                    <div class="CourseList-courseLevel" data-level="avanzado">
+                                        B&aacute;sico  Intermedio  Avanzado
+                                    </div>                                        
+                                </div>
+                                <div class="CourseList-courseInfo"><h3 class="CourseList-courseTitle">Android</h3>
+                                    <!--<a href="#" onclick="mostrarInformacion('android');" class="CourseList-courseLink">Ver más detalles</a>-->
+                                </div>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+                <br>
+                <br>
+                <div class="espacio-btn">
+                    <a href="planes.html" class="MainSection-register btn-Green btn-modelo">Ver Planes</a>
+                </div>
+            </section>
+
+
+            <footer id="footer" class="Footer">
+                <div class="Footer-container u-wrapper u-clearfix">
+                    <div class="footer-column">
+                        <ul>
+                            <li>
+                                <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
+                                <a href="Contactos.html">Cont&aacute;ctenos</a>
+                            </li>
+                            <li>
+                                <img src="img/phone.png">&nbsp;949716348 / 968143991 
+                            </li>
+                            <li>
+                                <img src="img/gmail.png">&nbsp;gcode.ln.peru@gmail.com
+                            </li>
+                            <li>
+                                <img src="img/facebook_logo.png">&nbsp;gcodelnperu
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="partners">
+                    <h3 class="partners-titulo">PARTNER</h3>
+                    <div class="partners-images">
+                        <figure >
+                            <img class="partners-img" src="img/agenciacreativa.ico" alt="Agencia Creativa">
+                            <figcaption>Agencia Creativa</figcaption>
+                        </figure>
+                    </div>
+                </div>      
+                </div>
+            </footer>
+
+        </section>
+    </body>
+</html>

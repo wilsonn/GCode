@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<!--<link rel="stylesheet"  href="css/gc01.css"/>
+    <link rel="stylesheet"  href="css/gc02.css"/>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <title>Bienvenido a GCode.ln en Español</title>-->
+    <script src="js/colaboradores.js" type="text/javascript"></script>
+</head>
+<body>
+                <div id="resultado" title="Mensaje"></div>
+                <div id="ayuda" title="Ayuda"></div>
+                <center>
+                    <p class="titulo-datos" id="ip">Conviertete en nuestro colaborador</p>
+                </center>
+                <form method="post" id="colaborador">
+                    <label>Paso 1: Mis Conocimientos</label>
+                    <hr/>
+                    <input type="button" name="mas" id="mas" value="+" class="btn-Green"/>
+                    <input type="button" name="menos" id="menos" value="-" class="btn-Green" disabled/><abbr title='Ayuda'><img src='img/ayuda.ico' class='icono' id='conocimientoayuda' alt='ayuda'/></abbr>
+                    <div id="conocimientos">
+
+                    </div>
+                    <br/>
+
+                    <label>Paso 2: Tus Beneficios</label>
+                    <hr/>
+                    <div id="beneficios">
+                        <p>Necesitamos acordar los beneficios que tendran nuestros colaboradores</p>
+                        <input type="checkbox" name="beneficios" id="leiBeneficios"/>He leido los beneficios&nbsp;&nbsp;&nbsp;&nbsp;<abbr title="Correcto"><img src="img/bien.ico" class="icono" id="beneficiosbien" alt="bien"/></abbr><abbr title="Incorrecto"><img src="img/mal.ico" class="icono" id="beneficiosmal" alt="mal"/></abbr>&nbsp;&nbsp;<abbr title="Ayuda"><img src="img/ayuda.ico" class="icono" id="beneficiosayuda" alt="ayuda"/></abbr>
+                    </div>
+                    <br/>
+
+                    <label>Paso 3: Condiciones y Restricciones</label>
+                    <hr/>
+                    <div id="CondicionesyRestricciones">
+                        <p>Necesitamos acordar las condiciones y restricciones tanto para los colaboradores como para los usuarios en general</p>
+                        <input type="checkbox" name="condiciones" id="leiCondiciones"/>He leido las condiciones y restricciones&nbsp;&nbsp;&nbsp;&nbsp;<abbr title="Correcto"><img src="img/bien.ico" class="icono" id="condicionesbien" alt="bien"/></abbr><abbr title="Incorrecto"><img src="img/mal.ico" class="icono" id="condicionesmal" alt="mal"/></abbr>&nbsp;&nbsp;<abbr title="Ayuda"><img src="img/ayuda.ico" class="icono" id="condicionesayuda" alt="ayuda"/></abbr>
+                    </div>
+                    <br/>
+                    <center>
+                        <input type="button" class="btn-Green btn--big" name="enviar" id="enviar" value="Enviar"/><img src="img/loading.gif" class="icono" alt="loading" id="loading"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!--<input type="button" class="btn-Green btn--big" name="cancelar" id="cancelar" value="Cancelar"/>-->
+                    </center>
+                </form>  
+    </body>
+</html>
